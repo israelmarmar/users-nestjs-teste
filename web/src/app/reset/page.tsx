@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Container, TextField, Button, Typography, Box } from '@mui/material';
 import axios from 'axios';
 import { useSearchParams } from 'next/navigation';
+import {Suspense} from "react";
 
 const ResetPassword: React.FC = () => {
   const searchParams = useSearchParams();
@@ -87,4 +88,12 @@ const ResetPassword: React.FC = () => {
   );
 };
 
-export default ResetPassword;
+const Page = () => {
+  return (
+      <Suspense>
+          <ResetPassword />
+      </Suspense>
+  )
+}
+
+export default Page;
