@@ -64,6 +64,8 @@ const Login: React.FC = () => {
             </Typography>
           )}
           <Link href="/forget">Esqueci a senha</Link>
+          <br />
+          <Link href="/signup">Cadastre-se</Link>
           <Button
             type="submit"
             variant="contained"

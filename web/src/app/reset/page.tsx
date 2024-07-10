@@ -25,7 +25,7 @@ const ResetPassword: React.FC = () => {
     }
 
     try {
-      const response = await axios.patch(`http://localhost:3000/auth/reset-password/${token}`, { password, passwordConfirmation });
+      const response = await axios.patch(`${process.env.NEXT_PUBLIC_API_URL}/auth/reset-password/${token}`, { password, passwordConfirmation });
       setSuccessMessage('Senha redefinida com sucesso.');
     } catch (error) {
       setErrorMessage('Erro ao redefinir senha. Por favor, tente novamente.');
