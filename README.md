@@ -23,3 +23,4 @@ npm run dev
 Abra [http://localhost:3001](http://localhost:3001) no navegador.
 
 
+Você pode testar as rotas da api na documentação Postman disponível em docs
